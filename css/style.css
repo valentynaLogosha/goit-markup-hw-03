@@ -17,13 +17,35 @@ body {
 }
 
 /* Header */
+img {
+  display: block;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-address-list {
+  display: flex;
+  gap: 40px;
+}
 
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .header-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  display: flex;
+  gap: 40px;
 }
 .web {
   font-family: "Raleway", sans-serif;
@@ -31,6 +53,7 @@ body {
   font-size: 18px;
   line-height: 1.17;
   color: var(--logo-web-color);
+  display: flex;
 }
 .link {
   text-decoration: none;
@@ -40,6 +63,8 @@ body {
 }
 .header-navigation {
   background: var(--main-color);
+  display: flex;
+  align-items: center;
 }
 .header-navigation-logo {
   font-family: "Raleway", sans-serif;
@@ -49,6 +74,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-text-color);
+  display: flex;
+  margin-right: 76px;
 }
 .header-link-adress:focus,
 .header-link-adress:hover {
@@ -64,6 +91,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--main-text-color);
+  display: flex;
 }
 .nav-link {
   color: var(--main-text-color);
@@ -75,11 +103,17 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-link-color);
+  display: flex;
+}
+.header-address {
+  margin-left: auto;
 }
 
 /* Section 2 */
 .solutions {
   background: var(--main-text-color);
+  padding-top: 188px;
+  padding-bottom: 292px;
 }
 .solutions-text {
   font-weight: 700;
@@ -87,7 +121,16 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  text-align: center;
+  width: 496px;
+  margin-bottom: 48px;
+  height: 120px;
 }
+.container-solutions {
+  text-align: center;
+  padding-bottom: 120px;
+}
+
 /* BUTTON */
 
 .btn {
@@ -99,6 +142,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   font-family: inherit;
+  width: 169px;
+  height: 56px;
+  display: block;
+  margin: 0 auto;
 }
 .btn:hover,
 :focus {
@@ -107,6 +154,15 @@ body {
 }
 
 /* Section 3 */
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.features-list {
+  display: flex;
+  gap: 24px;
+  max-width: 1128px;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -119,7 +175,6 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-
 .features-text {
   font-weight: 500;
   font-size: 20px;
@@ -133,7 +188,10 @@ body {
   color: var(--main-link-color);
 }
 /* Section What are we doing */
-
+.examples {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .examples-text {
   font-weight: 700;
   font-size: 36px;
@@ -146,6 +204,8 @@ body {
 
 .team {
   background: var(--section-second-color);
+  padding-top: 120px;
+  padding-bottom: 0px;
 }
 
 .team-text {
