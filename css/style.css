@@ -27,10 +27,7 @@ h5,
 p {
   margin: 0;
 }
-button {
-  cursor: pointer;
-  margin: 0 auto;
-}
+
 img {
   display: block;
   max-width: 100%;
@@ -135,6 +132,7 @@ img {
   background: var(--main-text-color);
   padding-top: 188px;
   padding-bottom: 188px;
+  text-align: center;
 }
 .solutions-text {
   font-weight: 700;
@@ -142,11 +140,11 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--main-color);
-  text-align: center;
-  width: 496px;
+  max-width: 496px;
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
+  text-transform: capitalize;
 }
 
 /* BUTTON */
@@ -166,19 +164,19 @@ img {
   display: block;
   margin: 0 auto;
   padding: 16px 32px;
-  text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .btn:hover,
 :focus {
   color: var(--main-color);
   background: var(--header-focus-hover-color);
-  cursor: pointer;
 }
 
 /* Section 3 */
 .features {
   padding-top: 120px;
+  padding-bottom: 60px;
 }
 .features-list {
   display: flex;
@@ -211,7 +209,7 @@ img {
 }
 /* Section What are we doing */
 .examples {
-  padding-top: 120px;
+  padding-top: 60px;
   padding-bottom: 120px;
 }
 .examples-text {
@@ -221,11 +219,19 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   text-align: center;
+  margin-bottom: 72px;
+  text-transform: capitalize;
 }
 .examples-text-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   display: flex;
-  gap: 24px;
-  padding-top: 72px;
+}
+.examples-card {
+  width: calc((100%-2.13% * 2) / 3);
+  margin-right: 2.13%;
+  display: list-item;
 }
 
 /* Section Our Team */
@@ -233,7 +239,7 @@ img {
 .team {
   background: var(--section-second-color);
   padding-top: 120px;
-  padding-bottom: 0px;
+  padding-bottom: 120px;
 }
 
 .team-text {
@@ -243,13 +249,24 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .team-list {
   display: flex;
-  gap: 24px;
-  padding-top: 72px;
-  padding-bottom: 120px;
-  max-width: 1158px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.team-list-container {
+  width: calc((100%-2.13% * 3) / 4);
+  margin-right: 2.13%;
+  padding-bottom: 32px;
+  text-align: center;
+  background-color: var(--main-background-color);
+  box-shadow: 0px 1px 6px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%),
+    0px 2px 1px rgb(46 47 66 / 8%);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-text-name {
@@ -259,7 +276,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   text-align: center;
-  padding-top: 8px;
+  margin-bottom: 8px;
 }
 .team-list-container {
   background: #ffffff;
@@ -273,47 +290,44 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-link-color);
   text-align: center;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 /*  Footer */
-.footer {
-  background: var(--main-text-color);
+footer {
+  background: #2e2f42;
   padding: 100px 0;
 }
-.footer-container {
-  width: 264px;
+.footer-logo {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  line-height: 1.17;
+  color: var(--section-second-color);
 }
-.footer-text {
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--footer-text-color);
-  padding-right: auto;
-  margin-top: 16px;
-}
-.footer-link {
+.logo {
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.17;
+  line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-decoration: none;
   color: var(--logo-web-color);
-  display: block;
 }
-.footer-navigation-logo {
-  color: var(--section-second-color);
-  display: flex;
+.footer-text {
+  width: 23.4%;
+  font-size: 16px;
+  color: var(--footer-text-color);
 }
-
 /* Portfolio */
 .portfolio {
   padding-top: 96px;
   padding-right: auto;
   padding-bottom: 120px;
   padding-left: auto;
-  display: flex;
-  flex-wrap: wrap;
 }
 .text-images-portfolio {
   font-weight: 500;
