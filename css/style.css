@@ -311,7 +311,7 @@ footer {
   padding: 0;
   color: var(--section-second-color);
 }
-.footer-container {
+.container-footer {
   display: flex;
   flex-direction: column;
 }
